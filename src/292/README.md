@@ -1,72 +1,19 @@
-# 297.二叉树的序列化与反序列化
+# 292.Nim游戏
 
-## 问题描述  
+## **问题描述**  
 
-序列化是将一个数据结构或者对象转换为连续的比特位的操作，进而可以将转换后的数据存储在一个文件或者内存中，同时也可以通过网络传输到另一个计算机环境，采取相反方式重构得到原数据。  
+你和你的朋友，两个人一起玩 Nim游戏：桌子上有一堆石头，每次你们轮流拿掉 1 - 3 块石头。 拿掉最后一块石头的人就是获胜者。你作为先手。
 
-请设计一个算法来实现二叉树的序列化与反序列化。这里不限定你的序列 / 反序列化算法执行逻辑，你只需要保证一个二叉树可以被序列化为一个字符串并且将这个字符串反序列化为原始的树结构。  
+你们是聪明人，每一步都是最优解。 编写一个函数，来判断你是否可以在给定石头数量的情况下赢得游戏。
 
-```c
-示例: 
-你可以将以下二叉树：
-    1
-   / \
-  2   3
-     / \
-    4   5
-序列化为 "[1,2,3,null,null,4,5]"
-```
+**样例**：  
+输入: 4  
+输出: false  
+解释: 如果堆中有 4 块石头，那么你永远不会赢得比赛；因为无论你拿走 1 块、2 块 还是 3 块石头，最后一块石头总是会被你的朋友拿走。  
 
-## 解决方案  
+## **解决方案**  
 
-&emsp;&emsp;先说点题外话，看这个题是因为有个同学的朋友参加了头条的面试，让他撸这个代码，我当时在听鹅厂的宣讲会，整个宣讲会一点干货没有，我就用手机撸了这题。还有今天被同学吐槽简历不好看，这大概就是我目前一个面试通知都没有的原因吧= =  
-&emsp;&emsp;说回这个题目，我的思路是用层序遍历，然后按层将结果写入StringBuilder变量中。这是序列化的过程。  
-&emsp;&emsp;反序列化其实也挺简单的，仍然按照层序遍历的方法，按层将结点放入队列，然后每poll一个结点，就从字符串数组中取两个数当作该结点的左右孩子，然后将左右孩子推入队列，直到所有的结点出队，或者字符数组清空。
+&emsp;&emsp;初看这个题目觉得要考虑很多种情况。但是其实，仔细想想并不是这样的，为什么样例数据是4的时候先手不论怎么样都是输呢。  
+&emsp;&emsp;假设参与游戏的两个人是a和b，a拿掉1-3之间任意一个数字na的石头，b总可以选择拿4-na个石头，这样如果石头的总数是4的倍数的时候，a先手无论怎么拿掉石头，b都可以保证每一轮两个人一共拿掉4个石头（即剩余石头数永远保持4的倍数）。这样b一定有办法可以拿到最后一块石头，所以当总数是4的倍数时，后手方b总有办法可以获得胜利。  
+&emsp;&emsp;考虑到这种情况，当石头总数不是4的整数倍的时候，只要先手方a第一次取走的石头数目能保证剩下的石头数目是4的倍数（因为可以取走1-3个石头，所以肯定能保证），就可以转换成“石头总数是4的倍数，但是先手方变成b”的情况了，所以只要石头数目不是4的倍数，先手方a总有方法可以取胜。
 
-```java
-public class Codec {
-
-    // Encodes a tree to a single string.
-    public String serialize(TreeNode root) {
-        if (root==null) return null;
-        Queue<TreeNode> q=new LinkedList<>();
-        StringBuilder sb=new StringBuilder();
-        q.add(root);
-        while(!q.isEmpty()){
-            TreeNode temp=q.poll();
-            if (temp==null) {
-                sb.append("null,");
-                continue;
-            }
-            sb.append(temp.val+",");
-            q.add(temp.left);
-            q.add(temp.right);
-        }
-        return sb.toString();
-    }
-
-    // Decodes your encoded data to tree.
-    public TreeNode deserialize(String data) {
-        if (data==null) return null;
-        String[] arr=data.split(",");
-        Queue<TreeNode> q=new LinkedList<>();
-        int i=0;
-        TreeNode root=new TreeNode(Integer.parseInt(arr[i]));
-        q.add(root);
-        while(!q.isEmpty() && i<arr.length){
-            TreeNode temp=q.poll();
-            i++;
-            if (i<arr.length && !arr[i].equals("null")){
-                temp.left=new TreeNode(Integer.parseInt(arr[i]));
-                q.add(temp.left);
-            }
-            i++;
-            if (i<arr.length && !arr[i].equals("null")){
-                temp.right=new TreeNode(Integer.parseInt(arr[i]));
-                q.add(temp.right);
-            }
-        }
-        return root;
-    }
-}
-```

@@ -35,4 +35,27 @@ target = 13
 
 ## **解决方案**  
 
-&emsp;&emsp;
+```java
+class Solution {
+    public boolean searchMatrix(int[][] matrix, int target) {
+        int m = matrix.length;
+        if (m == 0) return false;
+        int n = matrix[0].length;
+        if (n == 0) return false;
+
+        int row = 0;
+        while (row < m && matrix[row][0] <= target) row++;
+        if (row > 0) row--;
+
+        int begin = 0, end = n - 1, mid = end / 2;
+        while (begin <= end) {
+            if (target == matrix[row][mid]) return true;
+            else if (target < matrix[row][mid]) end = mid - 1;
+            else begin = mid + 1;
+            mid = (begin + end) / 2;
+        }
+
+        return false;
+    }
+}
+```
