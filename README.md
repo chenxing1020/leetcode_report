@@ -10,6 +10,7 @@ leetcode解题报告
 |007|[整数反转](./src/007/README.md)|Easy|
 |008|[字符串转换整数(atoi)](./src/008/README.md)|Medium|
 |009|[回文数](./src/009/README.md)|Easy|
+|010|[正则表达式的匹配](./src/010/README.md)|Hard|
 |011|[盛水最多的容器](./src/011/README.md)|Medium|
 |014|[最长公共前缀](./src/014/README.md)|Easy|
 |015|[三数之和](./src/015/README.md)|Medium|
@@ -58,4 +59,5 @@ leetcode解题报告
 |495|[提莫攻击](./src/495/README.md)|Medium|
 |557|[反转字符串中的单词 III](./src/557/README.md)|Easy|
 |567|[字符串的排列](./src/567/README.md)|Medium|
+|746|[使用最小花费爬楼梯](./src/746/README.md)|Easy|
 |807|[保持城市天际线](./src/807/README.md)|Medium|
