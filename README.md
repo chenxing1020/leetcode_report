@@ -4,12 +4,10 @@ leetcode解题报告
 
 ![1](https://img.shields.io/static/v1.svg?label=堆栈&message=4&color)
 ![1](https://img.shields.io/static/v1.svg?label=滑动窗口&message=1&color)
-![1](https://img.shields.io/static/v1.svg?label=贪心&message=1&color)
 ![1](https://img.shields.io/static/v1.svg?label=位运算&message=4&color)
 ![1](https://img.shields.io/static/v1.svg?label=树&message=7&color)
 ![1](https://img.shields.io/static/v1.svg?label=DFS&message=2&color)
 ![1](https://img.shields.io/static/v1.svg?label=数组&message=19&color)
-![1](https://img.shields.io/static/v1.svg?label=哈希表&message=2&color)
 ![1](https://img.shields.io/static/v1.svg?label=链表&message=10&color)
 ![1](https://img.shields.io/static/v1.svg?label=双指针&message=9&color)
 ![1](https://img.shields.io/static/v1.svg?label=回溯&message=4&color)
@@ -32,12 +30,6 @@ leetcode解题报告
 |023|[合并K个有序链表](./src/023/README.md)|Medium|
 |155|[最小栈](./src/155/README.md)|Easy|
 |215|[数组中的第K个最大元素](./src/215/README.md)|Medium|
-
-## 贪心
-
-| # |Title|Difficulty|
-|---|---|---|
-|122|[买卖股票的最佳时机II](./src/122/README.md)|Easy|
 
 ## 位运算
 
@@ -90,13 +82,6 @@ leetcode解题报告
 |238|[除自身以外数组的乘积](./src/238/README.md)|Medium|
 |495|[提莫攻击](./src/495/README.md)|Medium|
 |746|[使用最小花费爬楼梯](./src/746/README.md)|Easy|
-
-## 哈希表
-
-| # |Title|Difficulty|
-|---|---|---|
-|136|[只出现一次的数字](./src/136/README.md)|Easy|
-|217|[存在重复元素](./src/217/README.md)|Easy|
 
 ## 链表
 
