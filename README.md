@@ -3,14 +3,14 @@
 leetcode解题报告
 
 ![1](https://img.shields.io/static/v1.svg?label=堆栈&message=4&color)
-![1](https://img.shields.io/static/v1.svg?label=滑动窗口&message=3&color)
-![1](https://img.shields.io/static/v1.svg?label=位运算&message=4&color)
-![1](https://img.shields.io/static/v1.svg?label=树&message=7&color)
-![1](https://img.shields.io/static/v1.svg?label=DFS&message=2&color)
-![1](https://img.shields.io/static/v1.svg?label=数组&message=19&color)
-![1](https://img.shields.io/static/v1.svg?label=链表&message=10&color)
-![1](https://img.shields.io/static/v1.svg?label=双指针&message=9&color)
-![1](https://img.shields.io/static/v1.svg?label=回溯&message=4&color)
+![2](https://img.shields.io/static/v1.svg?label=滑动窗口&message=3&color)
+![3](https://img.shields.io/static/v1.svg?label=位运算&message=4&color)
+![4](https://img.shields.io/static/v1.svg?label=树&message=10&color)
+![5](https://img.shields.io/static/v1.svg?label=DFS/BFS&message=5&color)
+![6](https://img.shields.io/static/v1.svg?label=数组&message=19&color)
+![7](https://img.shields.io/static/v1.svg?label=链表&message=11&color)
+![8](https://img.shields.io/static/v1.svg?label=双指针&message=9&color)
+![9](https://img.shields.io/static/v1.svg?label=回溯&message=4&color)
 ![1](https://img.shields.io/static/v1.svg?label=DP&message=7&color)
 ![1](https://img.shields.io/static/v1.svg?label=分治&message=5&color)
 ![1](https://img.shields.io/static/v1.svg?label=二分&message=4&color)
@@ -48,19 +48,25 @@ leetcode解题报告
 | # |Title|Difficulty|
 |---|---|---|
 |104|[二叉树的最大深度](./src/104/README.md)|Easy|
+|111|[二叉树的最小深度](./src/111/README.md)|Easy|
 |124|[二叉树中的最大路径和](./src/124/README.md)|Hard|
 |226|[翻转二叉树](./src/226/README.md)|Easy|
 |230|[二叉搜索树中第K小的元素](./src/230/README.md)|Medium|
 |235|[二叉搜索树的最近公共祖先](./src/235/README.md)|Easy|
 |236|[二叉树的最近公共祖先](./src/236/README.md)|Medium|
 |297|[二叉树的序列化与反序列化](./src/297/README.md)|Hard|
+|559|[N叉树的最大深度](./src/559/README.md)|Easy|
+|623|[在二叉树中增加一行](./src/559/README.md)|Medium|
 
-## DFS
+## DFS&BFS
 
 | # |Title|Difficulty|
 |---|---|---|
 |104|[二叉树的最大深度](./src/104/README.md)|Easy|
+|111|[二叉树的最小深度](./src/111/README.md)|Easy|
 |124|[二叉树中的最大路径和](./src/124/README.md)|Hard|
+|559|[N叉树的最大深度](./src/559/README.md)|Easy|
+|623|[在二叉树中增加一行](./src/559/README.md)|Medium|
 
 ## 数组
 
@@ -94,6 +100,7 @@ leetcode解题报告
 |021|[合并两个有序链表](./src/021/README.md)|Easy|
 |023|[合并K个有序链表](./src/023/README.md)|Medium|
 |061|[旋转链表](./src/061/README.md)|Medium|
+|138|[复制带随机指针的链表](./src/138/README.md)|Medium|
 |141|[环形链表](./src/141/README.md)|Easy|
 |142|[环形链表II](./src/142/README.md)|Medium|
 |148|[排序链表](./src/148/README.md)|Medium|
