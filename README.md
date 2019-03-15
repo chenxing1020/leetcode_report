@@ -3,7 +3,7 @@
 leetcode解题报告
 
 ![1](https://img.shields.io/static/v1.svg?label=堆栈&message=4&color)
-![1](https://img.shields.io/static/v1.svg?label=滑动窗口&message=2&color)
+![1](https://img.shields.io/static/v1.svg?label=滑动窗口&message=3&color)
 ![1](https://img.shields.io/static/v1.svg?label=位运算&message=4&color)
 ![1](https://img.shields.io/static/v1.svg?label=树&message=7&color)
 ![1](https://img.shields.io/static/v1.svg?label=DFS&message=2&color)
@@ -23,6 +23,7 @@ leetcode解题报告
 |---|---|---|
 |003|[无重复字符的最长子串](./src/003/README.md)|Medium|
 |076|[最小覆盖子串](./src/076/README.md)|Hard|
+|239|[滑动窗口最大值](./src/239/README.md)|Hard|
 
 ## 堆栈
 
