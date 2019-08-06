@@ -1,5 +1,6 @@
 class Solution {
     public static String decodeString(String s) {
+        if (s.equals("")) return "";
         char[] c = s.toCharArray();
         int k = 0, len = c.length;
         Stack<String> strStack = new Stack<>();
