@@ -1,0 +1,76 @@
+import java.util.*;
+public class LRUCache {
+    
+    class DNode{
+        int key;
+        int val;
+        DNode pre;
+        DNode next;
+        public DNode(){}
+        public DNode(int key,int val){
+            this.key=key;
+            this.val=val;
+        }
+    }
+    
+    private Hashtable<Integer,DNode> cache;
+    private int capacity;
+    private DNode head=new DNode();
+    private DNode end=new DNode();
+
+    public LRUCache(int capacity) {
+        this.capacity=capacity;
+        cache=new Hashtable<Integer,DNode>(capacity);
+    }
+    
+    public int get(int key) {
+        if (cache.containsKey(key)){
+            DNode keyNode=cache.get(key);
+            removeNode(keyNode);
+            addNode(keyNode);
+            return keyNode.val;
+        }
+        return -1;
+    }
+    
+    public void put(int key, int value) {
+        //存在key值即覆盖
+        if (cache.containsKey(key)){
+            DNode keyNode=cache.get(key);
+            removeNode(keyNode);
+            addNode(keyNode);
+            keyNode.val=value;
+        }else{
+            //缓存容量达到上限
+            //删除最不常使用的key
+            if (cache.size()==capacity){
+                cache.remove(head.next.key);
+                removeNode(head.next);
+            }
+            DNode newNode=new DNode(key,value);
+            addNode(newNode);
+            cache.put(key,newNode);
+        }
+    }
+    
+    //删除节点
+    public void removeNode(DNode node){
+        DNode preNode=node.pre;
+        preNode.next=node.next;
+        node.next.pre=node.pre;
+    }
+    
+    //添加节点
+    public void addNode(DNode node){
+        node.pre=end.pre;
+        node.pre.next=node;
+        node.next=end;
+    }
+}
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache obj = new LRUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
+ */
