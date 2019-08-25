@@ -2,10 +2,10 @@
 
 leetcode解题报告
 
-![1](https://img.shields.io/static/v1.svg?label=堆栈&message=4&color)
+![1](https://img.shields.io/static/v1.svg?label=堆栈&message=5&color)
 ![2](https://img.shields.io/static/v1.svg?label=滑动窗口&message=3&color)
 ![3](https://img.shields.io/static/v1.svg?label=位运算&message=4&color)
-![4](https://img.shields.io/static/v1.svg?label=树&message=10&color)
+![4](https://img.shields.io/static/v1.svg?label=树&message=11&color)
 ![5](https://img.shields.io/static/v1.svg?label=DFS/BFS&message=5&color)
 ![6](https://img.shields.io/static/v1.svg?label=数组&message=19&color)
 ![7](https://img.shields.io/static/v1.svg?label=链表&message=11&color)
@@ -15,7 +15,7 @@ leetcode解题报告
 ![1](https://img.shields.io/static/v1.svg?label=分治&message=5&color)
 ![1](https://img.shields.io/static/v1.svg?label=二分&message=4&color)
 ![1](https://img.shields.io/static/v1.svg?label=字符串&message=9&color)
-![1](https://img.shields.io/static/v1.svg?label=其他&message=4&color)
+![1](https://img.shields.io/static/v1.svg?label=其他&message=6&color)
 
 ## 滑动窗口
 
@@ -33,6 +33,7 @@ leetcode解题报告
 |023|[合并K个有序链表](./src/023/README.md)|Medium|
 |155|[最小栈](./src/155/README.md)|Easy|
 |215|[数组中的第K个最大元素](./src/215/README.md)|Medium|
+|394|[字符串解码](./src/394/README.md)|Medium|
 
 ## 位运算
 
@@ -50,6 +51,7 @@ leetcode解题报告
 |104|[二叉树的最大深度](./src/104/README.md)|Easy|
 |111|[二叉树的最小深度](./src/111/README.md)|Easy|
 |124|[二叉树中的最大路径和](./src/124/README.md)|Hard|
+|199|[二叉树的右视图](./src/199/README.md)|Medium|
 |226|[翻转二叉树](./src/226/README.md)|Easy|
 |230|[二叉搜索树中第K小的元素](./src/230/README.md)|Medium|
 |235|[二叉搜索树的最近公共祖先](./src/235/README.md)|Easy|
@@ -183,5 +185,7 @@ leetcode解题报告
 |---|---|---|
 |007|[整数反转](./src/007/README.md)|Easy|
 |009|[回文数](./src/009/README.md)|Easy|
+|146|[LRU缓存机制](./src/146/README.md)|Medium|
 |292|[Nim游戏](./src/292/README.md)|Easy|
+|460|[LFU缓存机制](./src/460/README.md)|Hard|
 |807|[保持城市天际线](./src/807/README.md)|Medium|
