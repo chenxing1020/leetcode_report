@@ -15,7 +15,7 @@ leetcode解题报告
 ![1](https://img.shields.io/static/v1.svg?label=分治&message=5&color)
 ![1](https://img.shields.io/static/v1.svg?label=二分&message=4&color)
 ![1](https://img.shields.io/static/v1.svg?label=字符串&message=9&color)
-![1](https://img.shields.io/static/v1.svg?label=其他&message=6&color)
+![1](https://img.shields.io/static/v1.svg?label=其他&message=8&color)
 
 ## 滑动窗口
 
@@ -186,6 +186,8 @@ leetcode解题报告
 |007|[整数反转](./src/007/README.md)|Easy|
 |009|[回文数](./src/009/README.md)|Easy|
 |146|[LRU缓存机制](./src/146/README.md)|Medium|
+|289|[生命游戏](./src/289/README.md)|Medium|
 |292|[Nim游戏](./src/292/README.md)|Easy|
 |460|[LFU缓存机制](./src/460/README.md)|Hard|
+|554|[砖墙](./src/554/README.md)|Medium|
 |807|[保持城市天际线](./src/807/README.md)|Medium|
