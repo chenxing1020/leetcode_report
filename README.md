@@ -5,13 +5,13 @@ leetcode解题报告
 ![1](https://img.shields.io/static/v1.svg?label=堆栈&message=5&color)
 ![2](https://img.shields.io/static/v1.svg?label=滑动窗口&message=3&color)
 ![3](https://img.shields.io/static/v1.svg?label=位运算&message=4&color)
-![4](https://img.shields.io/static/v1.svg?label=树&message=11&color)
+![4](https://img.shields.io/static/v1.svg?label=树&message=12&color)
 ![5](https://img.shields.io/static/v1.svg?label=DFS/BFS&message=5&color)
 ![6](https://img.shields.io/static/v1.svg?label=数组&message=19&color)
 ![7](https://img.shields.io/static/v1.svg?label=链表&message=11&color)
 ![8](https://img.shields.io/static/v1.svg?label=双指针&message=9&color)
 ![9](https://img.shields.io/static/v1.svg?label=回溯&message=4&color)
-![1](https://img.shields.io/static/v1.svg?label=DP&message=8&color)
+![1](https://img.shields.io/static/v1.svg?label=DP&message=9&color)
 ![1](https://img.shields.io/static/v1.svg?label=分治&message=5&color)
 ![1](https://img.shields.io/static/v1.svg?label=二分&message=4&color)
 ![1](https://img.shields.io/static/v1.svg?label=字符串&message=9&color)
@@ -48,6 +48,7 @@ leetcode解题报告
 
 | # |Title|Difficulty|
 |---|---|---|
+|098|[验证二叉搜索树](./src/098/README.md)|Medium|
 |104|[二叉树的最大深度](./src/104/README.md)|Easy|
 |111|[二叉树的最小深度](./src/111/README.md)|Easy|
 |124|[二叉树中的最大路径和](./src/124/README.md)|Hard|
@@ -78,6 +79,7 @@ leetcode解题报告
 |011|[盛水最多的容器](./src/011/README.md)|Medium|
 |015|[三数之和](./src/015/README.md)|Medium|
 |026|[删除排序数组中的重复项](./src/026/README.md)|Easy|
+|031|[下一个排列](./src/031/README.md)|Medium|
 |033|[搜索旋转排序数组](./src/033/README.md)|Medium|
 |053|[最大子序和](./src/053/README.md)|Easy|
 |054|[螺旋矩阵](./src/054/README.md)|Medium|
@@ -168,6 +170,7 @@ leetcode解题报告
 |062|[不同路径](./src/062/README.md)|Medium|
 |070|[爬楼梯](./src/070/README.md)|Easy|
 |121|[买卖股票的最佳时机](./src/121/README.md)|Easy|
+|718|[最长重复子数组](./src/718/README.md)|Medium|
 |746|[使用最小花费爬楼梯](./src/746/README.md)|Easy|
 
 ## 回溯
