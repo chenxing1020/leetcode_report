@@ -11,7 +11,7 @@ leetcode解题报告
 ![7](https://img.shields.io/static/v1.svg?label=链表&message=11&color)
 ![8](https://img.shields.io/static/v1.svg?label=双指针&message=9&color)
 ![9](https://img.shields.io/static/v1.svg?label=回溯&message=4&color)
-![1](https://img.shields.io/static/v1.svg?label=DP&message=9&color)
+![1](https://img.shields.io/static/v1.svg?label=DP&message=10&color)
 ![1](https://img.shields.io/static/v1.svg?label=分治&message=5&color)
 ![1](https://img.shields.io/static/v1.svg?label=二分&message=4&color)
 ![1](https://img.shields.io/static/v1.svg?label=字符串&message=9&color)
@@ -170,6 +170,7 @@ leetcode解题报告
 |062|[不同路径](./src/062/README.md)|Medium|
 |070|[爬楼梯](./src/070/README.md)|Easy|
 |121|[买卖股票的最佳时机](./src/121/README.md)|Easy|
+|338|[比特位计数](./src/338/README.md)|Medium|
 |718|[最长重复子数组](./src/718/README.md)|Medium|
 |746|[使用最小花费爬楼梯](./src/746/README.md)|Easy|
 
